@@ -7,7 +7,9 @@ on:
 
 jobs:
     build:
-      runs-on: production
+      runs-on: 
+       group: default
+       labels: [production, Linux]
       steps:
         - name: Checkout Repository
           uses: actions/checkout@v4
